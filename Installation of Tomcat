@@ -1,0 +1,27 @@
+* How to deploy the Web Application in a Tomcat Server *
+STEP 1:
+* Push the source into your Github repository.
+* Launch the public instance with AMI as Ubuntu and allow the port number as 8080 in Network Settings of a Instance.
+
+STEP 2:
+* Connect the instance.
+* Switch to the root user by using these commands in a terminal
+* Command - sudo su -
+* Command - apt update 
+* Command - git cllone (github repository url)
+* Command - apt install openjdk-17-jre -y
+* Command - apt install maven
+* Command - mvn clean package
+STEP 2:
+* Switch to the root user.
+* Go to Google Search for the appache.org.
+* Copy the tar link.
+* Command - wget apache-tomcat-9.0.96.tar.gz
+* Command - tar -zxvf apache-tomcat-9.0.96.tar.gz
+STEP 3:
+* Set the credentials in terminal.
+* Copy the public ip addres of an instance and paste the ip addres with :8080 port number.
+* Here it will redirect to the Apache Tomcat/9.0.96.
+
+
+
